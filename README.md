@@ -97,7 +97,7 @@ Here, we provide the description of each input parameter.
 "stat.N" denotes the number of temporal bandwidths. This parameter is used when we consider the bandwidth tuning problem (i.e., stat.STKDV_type = 2).
 
 ## Example 1: STKDV with On-the-fly Timestamps
-Here, we illustrate how to use call our PREFIX<sub>single</sub> to generate STKDV in the default region with the resolution size $1280 \times 960$ and 32 on-the-fly timestamps in the New York traffic accident dataset (with the input file name "New_York") using the Epanechnikov function as spatial and temporal kernels. The shell script code is shown as follows.
+Here, we illustrate how to use call our PREFIX<sub>single</sub> to generate STKDV in the default region with the resolution size 1280 $\times$ 960 and 32 on-the-fly timestamps in the New York traffic accident dataset (with the input file name "New_York") using the Epanechnikov function as spatial and temporal kernels. The shell script code is shown as follows.
 
 ```
 dataFileName="New_York"
@@ -116,7 +116,7 @@ is_default_region=1
 ```
 
 ## Example 2: STKDV with Known Timestamps
-In order to generate STKDV in the default region with the resolution size $1280 \times 960$ and 32 known timestamps in the New York traffic accident dataset (with the input file name "New_York") using the Epanechnikov function as spatial and temporal kernels, we can simply set STKDV_type = 1. 
+In order to generate STKDV in the default region with the resolution size 1280 $\times$ 960 and 32 known timestamps in the New York traffic accident dataset (with the input file name "New_York") using the Epanechnikov function as spatial and temporal kernels, we can simply set STKDV_type = 1. 
 ```
 dataFileName="New_York"
 outputFileName="./Results/New_York_STKDV_1_Method_2"
@@ -134,7 +134,7 @@ is_default_region=1
 ```
 
 ## Example 3: Bandwidth Tuning
-Here, we consider an example to support bandwidth tuning in the New York traffic accident dataset (with the input file name "New_York") with three spatial bandwidths and five temporal bandwidths, where the resolution size and the number of timestamps of each STKDV are fixed to be $1280\times 960$ and 32, respectively. Moreover, we also adopt the Epanechnikov function as the spatial and temporal kernels. The shell script code is shown as follows. 
+Here, we consider an example to support bandwidth tuning in the New York traffic accident dataset (with the input file name "New_York") with three spatial bandwidths and five temporal bandwidths, where the resolution size and the number of timestamps of each STKDV are fixed to be 1280 $\times$ 960 and 32, respectively. Moreover, we also adopt the Epanechnikov function as the spatial and temporal kernels. The shell script code is shown as follows. 
 ```
 dataFileName="New_York"
 outputFileName="./Results/New_York_STKDV_2_Method_2"
@@ -153,7 +153,8 @@ N=5
 ./main $dataFileName $outputFileName $STKDV_type $method $n_x $n_y $n_t $k_type_s $k_type_t $b_s_ratio $b_t_ratio $is_default_region $M $N
 ```
 
-
+# A Holistic Solution for Generating STKDV
+++TODO: add details++
 
 <!--- The shell script file "[compile_run.sh](compile_run.sh)" includes the details for compiling and running our C++ code.--->
 
