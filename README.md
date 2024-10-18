@@ -153,8 +153,8 @@ N=5
 ./main $dataFileName $outputFileName $STKDV_type $method $n_x $n_y $n_t $k_type_s $k_type_t $b_s_ratio $b_t_ratio $is_default_region $M $N
 ```
 
-# A Holistic Solution for Generating STKDV
-++TODO: add details++
+# PREFIX<sub>tuning</sub>: A Holistic Solution for Generating STKDV
+In order to ease the implementation of our PREFIX solution for further development, we would like to point out that PREFIX<sub>tuning</sub> can act as a holistic solution for supporting all problem settings, including (i) STKDV with on-the-fly timestamps, (2) STKDV with known timestamps, and (3) bandwidth tuning, without incurring any additional time complexity. Consider the STKDV problem with $T$ known timestamps (see Problem~1). This problem is the special case of the bandwidth tuning problem with one spatial bandwidth and one temporal bandwidth (i.e., $M=1$ and $N=1$ in Problem~2). Therefore, once we set $M=1$ and $N=1$ for the PREFIX<sub>tuning</sub> method, it returns the result of STKDV with $T$ known timestamps. The time complexity of PREFIX<sub>tuning</sub> in this case is also $O(XYT+Yn)$ (see Table~II), which is the same as PREFIX<sub>multiple</sub>. Similarly, the STKDV problem with one (on-the-fly) timestamp is also the special case of the bandwidth tuning problem with one spatial bandwidth ($M=1$), one temporal bandwidth ($N=1$), and one timestamp $(T=1)$. The time complexity of PREFIX<sub>tuning</sub> in this case is also $O(Y(X+n))$ (see Table~II), which is the same as PREFIX<sub>single</sub>.
 
 <!--- The shell script file "[compile_run.sh](compile_run.sh)" includes the details for compiling and running our C++ code.--->
 
