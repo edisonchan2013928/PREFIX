@@ -134,7 +134,26 @@ is_default_region=1
 ```
 
 ## Example 3: Bandwidth Tuning
-++TODO: add details++
+Here, we consider an example to support bandwidth tuning in the New York traffic accident dataset (with the input file name "New_York") with three spatial bandwidths and five temporal bandwidths, where the resolution size and the number of timestamps of each STKDV are fixed to be $1280\times 960$ and 32, respectively. Moreover, we also adopt the Epanechnikov function as the spatial and temporal kernels. The shell script code is shown as follows. 
+```
+dataFileName="New_York"
+outputFileName="./Results/New_York_STKDV_2_Method_2"
+STKDV_type=2
+method=2
+n_x=1280
+n_y=960
+n_t=32
+k_type_s=1
+k_type_t=1
+b_s_ratio=1
+b_t_ratio=1
+is_default_region=1
+M=3
+N=5
+./main $dataFileName $outputFileName $STKDV_type $method $n_x $n_y $n_t $k_type_s $k_type_t $b_s_ratio $b_t_ratio $is_default_region $M $N
+```
+
+
 
 <!--- The shell script file "[compile_run.sh](compile_run.sh)" includes the details for compiling and running our C++ code.--->
 
