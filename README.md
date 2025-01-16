@@ -97,7 +97,7 @@ Here, we provide the description of each input parameter.
 "stat.N" denotes the number of temporal bandwidths. This parameter is used when we consider the bandwidth tuning problem (i.e., stat.STKDV_type = 2).
 
 ## Example 1: STKDV with On-the-fly Timestamps
-Here, we illustrate how to use call our PREFIX<sub>single</sub> to generate STKDV in the default region with the resolution size 1280 $\times$ 960 and 32 on-the-fly timestamps in the New York traffic accident dataset (with the input file name "New_York") using the Epanechnikov function as spatial and temporal kernels. The shell script code is shown as follows.
+Here, we illustrate how to call our PREFIX<sub>single</sub> to generate STKDV in the default region with the resolution size 1280 $\times$ 960 and 32 on-the-fly timestamps in the New York traffic accident dataset (with the input file name "New_York") using the Epanechnikov function as spatial and temporal kernels. The shell script code is shown as follows.
 
 ```
 dataFileName="New_York"
