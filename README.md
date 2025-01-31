@@ -1,5 +1,5 @@
 # Code Descriptions
-This code is the implementation of our paper "Large-scale Spatiotemporal Kernel Density Visualization", which is submitted to ICDE 2025. Due to space limitations of the Github repository, we do not upload the datasets into this link. However, all datasets are the open data, which can be downloaded from the references in Table III (see the column "Ref."). We have also attached "[example_data_file](example_data_file)" to show the format of the input data file.
+This code is the implementation of our paper "Large-scale Spatiotemporal Kernel Density Visualization", which is accepted in ICDE 2025. Due to space limitations of the Github repository, we do not upload the datasets into this link. However, all datasets are the open data, which can be downloaded from the references in Table III (see the column "Ref."). We have also attached "[example_data_file](example_data_file)" to show the format of the input data file.
 
 The file "[otf_visual.cpp](otf_visual.cpp)" shows the implementation of the methods, SWS (lines 37 to 63) and PREFIX<sub>single</sub> (lines 90 to 124), for generating STKDV (see Problem 1) with on-the-fly timestamps.
 
